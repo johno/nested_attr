@@ -1,0 +1,31 @@
+<h1>Listing forests</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Size</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Climate</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @forests.each do |forest| %>
+  <tr>
+    <td><%= forest.name %></td>
+    <td><%= forest.size %></td>
+    <td><%= forest.latitude %></td>
+    <td><%= forest.longitude %></td>
+    <td><%= forest.climate %></td>
+    <td><%= link_to 'Show', forest %></td>
+    <td><%= link_to 'Edit', edit_forest_path(forest) %></td>
+    <td><%= link_to 'Destroy', forest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Forest', new_forest_path %>

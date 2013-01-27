@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @forest.name %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @forest.size %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @forest.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @forest.longitude %>
+</p>
+
+<p>
+  <b>Climate:</b>
+  <%= @forest.climate %>
+</p>
+
+<p>
+  <b>Trees:</b>
+  <% if @forest.trees.any? %>
+    <ul>
+      <% @forest.trees.each do |tree| %>
+        <li><%= tree.common_name %> <%= tree.scientific_name %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</p>
+
+
+<%= link_to 'Edit', edit_forest_path(@forest) %> |
+<%= link_to 'Back', forests_path %>

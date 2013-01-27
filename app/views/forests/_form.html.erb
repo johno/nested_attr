@@ -1,0 +1,19 @@
+<%= form_for(@forest) do |f| %>
+  <% if @forest.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@forest.errors.count, "error") %> prohibited this forest from being saved:</h2>
+
+      <ul>
+      <% @forest.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= render partial: 'fields', locals: { f: f } %>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

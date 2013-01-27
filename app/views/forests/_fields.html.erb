@@ -1,0 +1,24 @@
+<div class="field">
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+</div>
+<div class="field">
+  <%= f.label :size %><br />
+  <%= f.text_field :size %>
+</div>
+<div class="field">
+  <%= f.label :latitude %><br />
+  <%= f.text_field :latitude %>
+</div>
+<div class="field">
+  <%= f.label :longitude %><br />
+  <%= f.text_field :longitude %>
+</div>
+<div class="field">
+  <%= f.label :climate %><br />
+  <%= f.text_field :climate %>
+</div>
+
+<%= f.fields_for :trees do |t| %>
+  <%= render partial: 'trees/fields', locals: { f: t } %>
+<% end %>
