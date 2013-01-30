@@ -15,7 +15,7 @@ If this relationship isn't accomplished with `accepts_nested_attributes_for`, we
 ###A sloppy controller
 
 Consider the abstracted new/create actions below:
-__Note: The parameters in the create action may vary, depending on your form.__
+######Note: The parameters in the create action may vary, depending on your form.
 
     class ParentModelController < ApplicationController
     
@@ -95,10 +95,12 @@ First, create the project
     john-mbp:~ johno$ rails new nested_attributes; cd nested_attributes
     
 Then, create a Forest scaffold with some attributes.  
-__note: I'm not normally a fan of utilizing scaffolds, but I use them here for brevity's sake.__
+######note: I'm not normally a fan of utilizing scaffolds, but I will use them here for brevity's sake.
 
     john-mbp:nested_attributes johno$ rails g scaffold Forest name:string size:integer latitude:integer longitude:integer climate:string
-    
+
+Thirdly, create the Tree scaffold.
+
     john-mbp:nested_attributes johno$ rails g scaffold Tree common_name:string scientific_name:string forest_id:integer
     
 
