@@ -90,11 +90,11 @@ For this example we will use Forest and Tree models where a Tree `belongs_to` a 
 
 ####So lets start a little project to test this out \([or clone it on github](https://github.com/johnotander/nested_attr.git)\):
 
-First, create the project
+First, create the project.
 
-    john-mbp:~ johno$ rails new nested_attributes; cd nested_attributes
+    john-mbp:~ johno$ rails new nested_attributes; cd nested_attributes   
     
-Then, create a Forest scaffold with some attributes.  
+Then, create a Forest scaffold with some attributes
 ######note: I'm not normally a fan of utilizing scaffolds, but I will use them here for brevity's sake.
 
     john-mbp:nested_attributes johno$ rails g scaffold Forest name:string size:integer latitude:integer longitude:integer climate:string
