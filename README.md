@@ -88,7 +88,7 @@ For this example we will use Forest and Tree models where a Tree `belongs_to` a 
     end
 
 
-So lets start a little project to test this out \([or clone it on github](https://github.com/johnotander/nested_attr.git)\):
+####So lets start a little project to test this out \([or clone it on github](https://github.com/johnotander/nested_attr.git)\):
 
 First, create the project
 
