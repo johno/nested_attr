@@ -94,7 +94,7 @@ First, create the project
 
     john-mbp:~ johno$ rails new nested_attributes; cd nested_attributes
     
-Then, create a Forest scaffold with some attributes.
+Then, create a Forest scaffold with some attributes.  
 __note: I'm not normally a fan of utilizing scaffolds, but I use them here for brevity's sake.__
 
     john-mbp:nested_attributes johno$ rails g scaffold Forest name:string size:integer latitude:integer longitude:integer climate:string
