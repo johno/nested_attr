@@ -2,7 +2,6 @@
 ###accepts\_nested\_attributes\_for
 
 ##Introduction
-* * *
 
 Developing web applications in Rails will inevitably lead to an Active Record `has_many`/`has_one` and `belongs_to` relationship. These Active Record associations can produce overly verbose and redundant code that become very difficult to maintain. Luckily, Ruby on Rails provides the `accepts_nested_attributes_for` method that results in the syntactic goodness that we strive for.  
 
