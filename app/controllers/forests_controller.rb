@@ -59,6 +59,8 @@ class ForestsController < ApplicationController
   def update
     @forest = Forest.find(params[:id])
 
+    @forest.special_scenario = 'testing'
+
     respond_to do |format|
       if @forest.update_attributes(params[:forest])
         format.html { redirect_to @forest, notice: 'Forest was successfully updated.' }

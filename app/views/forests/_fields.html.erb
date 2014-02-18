@@ -18,6 +18,10 @@
   <%= f.label :climate %><br />
   <%= f.text_field :climate %>
 </div>
+<div class="field">
+  <%= f.label :special_scenario %><br />
+  <%= f.text_field :special_scenario %>
+</div>
 
 <%= f.fields_for :trees do |t| %>
   <%= render partial: 'trees/fields', locals: { f: t } %>
