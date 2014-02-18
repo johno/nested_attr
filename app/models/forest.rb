@@ -1,5 +1,4 @@
 class Forest < ActiveRecord::Base
-  before_save :do_stuff
   has_many :trees
   accepts_nested_attributes_for :trees, allow_destroy: true
   attr_accessible :trees_attributes
@@ -13,8 +12,4 @@ class Forest < ActiveRecord::Base
   validates_presence_of :climate
   validates_presence_of :latitude
   validates_presence_of :longitude
-
-  def do_stuff
-    puts special_scenario.inspect
-  end
 end
